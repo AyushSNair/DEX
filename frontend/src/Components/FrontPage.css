@@ -1,8 +1,8 @@
 .container{
-    margin: 0 auto;
-    max-width: 1440px;
-    max-height: 613px;
     
+    max-width: 1440px;
+    max-height: 1500px;
+    align-items: center;
 }
 
 .hero {
@@ -10,7 +10,17 @@
     align-items: center;
     
 }
+.hero-content{
+    margin-top: 20px;
+}
 
+.hero-content h1{
+    margin-left: 20px;
+}
+
+.hero-content p{
+    margin-left: 20px;
+}
 .shop-now-btn{
     background-color: rgb(170, 36, 36);
     border: none;
@@ -19,20 +29,373 @@
     color: whitesmoke;
 }
 
-.hero-btn{
+/*supportcardDiv*/
+.supportcardDiv{
+    margin-left: 100px;
     display: flex;
-    max-width: 331px;
-    gap: 40px;
-   
+    gap: 80px;
 }
 
-.category-btn{
-    width: 141px;
-    height: 41px;
-    border: none;
-}
+/*SupoortCard css Start*/
+
+
+.supportCard {
+    
+    position: relative;
+    width: 11.875em;
+    height: 16.5em;
+    box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+    cursor: pointer;
+    transition: all 120ms;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    padding: 0.5em;
+    padding-bottom: 3.4em;
+    margin-bottom: 30px;
+  }
+  
+  .supportCard::after {
+    content: "Check Now!";
+    padding-top: 1.25em;
+    padding-left: 1.25em;
+    position: absolute;
+    left: 0;
+    bottom: -60px;
+    background: #040404;
+    color: #fff;
+    height: 60px;
+    width: 90%;
+    transition: all 80ms;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0;
+  }
+  
+  .supportCard .title {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 1.625em;
+    font-weight: 400;
+    color: #000;
+  }
+  
+  .supportCard .price {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 0.9em;
+    position: absolute;
+    left: 0.625em;
+    bottom: 0.625em;
+    color: #000;
+  }
+  
+  .supportCard:hover::after {
+    bottom: 0;
+    opacity: 1;
+  }
+  
+  .supportCard:active {
+    transform: scale(0.98);
+  }
+  
+  .supportCard:active::after {
+    content: "Added !";
+    height: 3.125em;
+  }
+  
+  .text {
+    max-width: 55px;
+  }
+  
+  .image {
+    background: rgb(241, 241, 241);
+    width: 100%;
+    height: 200px;
+    display: grid;
+    place-items: center;
+  }
+
+/*SupoortCard css */
 
 .hero-image {
     margin-top: 100px; /* Adjust the value as needed */
   }
   
+  html, body {
+    height: 100%; /* Makes sure the body covers the full viewport height */
+  }
+
+/* Second Section Styling */
+.secondDiv {
+    padding: 20px;
+    background-color: #f5f5f5;
+    text-align: center;
+    border-top: 1px solid #ccc;
+  }
+  
+  .secondDiv h1 {
+    margin-top: 30px;
+    font-size: 24px;
+    color: #333;
+  }
+
+
+/*Component After Book and ppointment*/
+
+.para{
+    font-size: 1rem;   /* Smaller than the heading */
+    font-weight: 400;  /* Normal weight */
+    text-align: center;
+    color: #4a5568;    /* Slightly lighter shade */
+    margin: 0;         /* Reset margin */
+    padding: 0.5rem 0; /* Add spacing below the text */
+}
+
+/*Chat with ai*/
+
+/* From Uiverse.io by Smit-Prajapati */ 
+.parent {
+    width: 300px;
+    padding: 20px;
+    perspective: 1000px;
+  }
+  
+  .card {
+    padding-top: 50px;
+    border: 3px solid rgb(255, 255, 255);
+    transform-style: preserve-3d;
+    background: linear-gradient(135deg, #000000ec 18.75%, #000000c7 0 31.25%, #000000 0), 
+        repeating-linear-gradient(45deg, #050505 -6.25% 6.25%, #000000 0 18.75%);
+    background-size: 60px 60px;
+    background-position: 0 0, 0 0;
+    background-color: #000000; /* Changed the base color to black */
+    width: 100%;
+    box-shadow: rgba(142, 142, 142, 0.3) 0px 30px 30px -10px;
+    transition: all 0.5s ease-in-out;
+    margin-left: 300px;
+    margin-top: 50px;
+}
+
+  
+  .card:hover {
+    background-position: -100px 100px, -100px 100px;
+    transform: rotate3d(0.5, 1, 0, 30deg);
+  }
+  
+  .content-box {
+    background: rgba(3, 3, 3, 0.732);
+    /* border-radius: 10px 100px 10px 10px; */
+    transition: all 0.5s ease-in-out;
+    padding: 60px 25px 25px 25px;
+    transform-style: preserve-3d;
+  }
+  
+  .content-box .card-title {
+    display: inline-block;
+    color: white;
+    font-size: 25px;
+    font-weight: 900;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 50px);
+  }
+  
+  .content-box .card-title:hover {
+    transform: translate3d(0px, 0px, 60px);
+  }
+  
+  .content-box .card-content {
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #f2f2f2;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 30px);
+  }
+  
+  .content-box .card-content:hover {
+    transform: translate3d(0px, 0px, 60px);
+  }
+  
+  .content-box .see-more {
+    cursor: pointer;
+    margin-top: 1rem;
+    display: inline-block;
+    font-weight: 900;
+    font-size: 9px;
+    text-transform: uppercase;
+    color: rgb(7, 185, 255);
+    /* border-radius: 5px; */
+    background: white;
+    padding: 0.5rem 0.7rem;
+    transition: all 0.5s ease-in-out;
+    transform: translate3d(0px, 0px, 20px);
+  }
+  
+  .content-box .see-more:hover {
+    transform: translate3d(0px, 0px, 60px);
+  }
+  
+  .date-box {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 60px;
+    width: 60px;
+    background: white;
+    border: 1px solid rgb(7, 185, 255);
+    /* border-radius: 10px; */
+    padding: 10px;
+    transform: translate3d(0px, 0px, 80px);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
+    border-radius: 20px;
+  }
+  
+  .date-box span {
+    display: block;
+    text-align: center;
+  }
+  
+  .date-box .month {
+    color: rgb(4, 193, 250);
+    font-size: 9px;
+    font-weight: 700;
+  }
+  
+  .date-box .date {
+    font-size: 20px;
+    font-weight: 900;
+    color: rgb(4, 193, 250);
+  }
+   
+  .benefitsdiv{
+    margin-left: 450px;
+  }
+
+  .belowbenefits{
+    margin-left: 270px;
+  }
+
+
+  /* From Uiverse.io by codebykay101 */ 
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .container .glass {
+    position: relative;
+    width: 180px;
+    height: 200px;
+    background: linear-gradient(#fff2, transparent);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: 0 25px 25px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    border-radius: 10px;
+    margin: 0 -45px;
+    backdrop-filter: blur(10px);
+    transform: rotate(calc(var(--r) * 1deg));
+  }
+  
+  .container:hover .glass {
+    transform: rotate(0deg);
+    margin: 0 10px;
+  }
+  
+  .container .glass::before {
+    content: attr(data-text);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+  }
+  .container .glass svg {
+    font-size: 2.5em;
+    fill: #fff;
+  }
+  .date-box .month {
+    
+    font-weight: 700;
+    height: 80px;
+    width:90px;
+  }  
+
+  .monthjune{
+    
+        color: rgb(4, 193, 250);
+        font-size: 9px;
+        font-weight: 700;
+        font-size: medium;
+  }
+
+
+  /* Cards Below Benfits of Personal AI HEalth Assistant CSS*/
+
+  /* From Uiverse.io by codebykay101 */ 
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  gap: 50px; /* Added for consistent spacing between cards */
+ 
+}
+
+.container .glass {
+  position: relative;
+  width: 180px;
+  height: 200px;
+  background: linear-gradient(to bottom, rgba(255, 255, 255, 0.2), transparent);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease, margin 0.5s ease;
+  border-radius: 15px; /* Softer rounded corners */
+  backdrop-filter: blur(12px); /* Slightly increased blur for a frosted glass effect */
+  transform: rotate(calc(var(--r) * 1deg));
+  width: 400px;
+}
+
+.container:hover .glass {
+  transform: rotate(0deg);
+  margin: 0 20px; /* Reduced margin for more compact spacing */
+}
+
+.container .glass::before {
+  content: attr(data-text);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 40px;
+  background: rgba(255, 255, 255, 0.1); /* Slightly brighter background for better contrast */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #000000; /* Adjusted color for better readability */
+  font-size: 0.9em; /* Slightly smaller text for a sleeker design */
+}
+
+.container .glass svg {
+  font-size: 3em; /* Increased icon size for better visibility */
+  fill: #000000; /* Adjusted color for consistency */
+  transition: fill 0.3s ease; /* Smooth transition for hover effects */
+}
+
+.container .glass:hover svg {
+  fill: #00bcd4; /* Added hover effect with a vibrant color */
+}
