@@ -15,7 +15,7 @@ function FirstPage() {
             <div className="supportCard">
               <div class="image">
                 
-                <span class="text">CHECK DIET PLAN</span>
+                <button>Go to Workout</button>
               </div>
               <span class="title"></span>
             </div>
