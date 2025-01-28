@@ -1,6 +1,8 @@
 import "./FrontPage.css";
 import "../App.css";
+import { useNavigate } from "react-router-dom";
 function FirstPage() {
+  const navigate = useNavigate();
   return (
     <>
       <main className="hero container">
@@ -15,14 +17,15 @@ function FirstPage() {
             <div className="supportCard">
               <div class="image">
                 
-                <button>Go to Workout</button>
+                <button onClick={() => navigate("/workout")}>Go to Workout</button>
               </div>
               <span class="title"></span>
             </div>
 
             <div className="supportCard">
               <div class="image">
-                <span class="text">CHECK WORKOUT PLAN</span>
+                
+                <button onClick={() => navigate("/diet")}>Go to diet</button>
               </div>
               <span class="title"></span>
             </div>
@@ -47,17 +50,17 @@ function FirstPage() {
         </p>
       </div>
 
-      <div class="parent">
-        <div class="card">
-          <div class="content-box">
-            <span class="card-title">AI COMPANION</span>
-            <p class="card-content">AI to plan your workout and diet plans</p>
-            <span class="see-more">Chat with AI Doctor</span>
+      <div className="parent5">
+        <div className="card5">
+          <div className="content-box5">
+            <span className="card-title5">AI COMPANION</span>
+            <p className="card-content5">AI to plan your workout and diet plans</p>
+            <span className="see-more5">Chat with AI Doctor</span>
           </div>
-          <div class="date-box">
-          <span class="monthjune">Dex AI</span>
+          <div className="date-box5">
+          <span className="monthjune5">Dex AI</span>
 
-            <img src="/images/airobot.png" class="month"></img>
+            <img src="/images/airobot.png" className="month5"></img>
           </div>
         </div>
       </div>

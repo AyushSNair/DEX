@@ -157,13 +157,13 @@
 /*Chat with ai*/
 
 /* From Uiverse.io by Smit-Prajapati */ 
-.parent {
+.parent5 {
     width: 300px;
     padding: 20px;
     perspective: 1000px;
   }
   
-  .card {
+  .card5 {
     padding-top: 50px;
     border: 3px solid rgb(255, 255, 255);
     transform-style: preserve-3d;
@@ -180,12 +180,12 @@
 }
 
   
-  .card:hover {
+  .card5:hover {
     background-position: -100px 100px, -100px 100px;
     transform: rotate3d(0.5, 1, 0, 30deg);
   }
   
-  .content-box {
+  .content-box5 {
     background: rgba(3, 3, 3, 0.732);
     /* border-radius: 10px 100px 10px 10px; */
     transition: all 0.5s ease-in-out;
@@ -193,7 +193,7 @@
     transform-style: preserve-3d;
   }
   
-  .content-box .card-title {
+  .content-box5 .card-title5 {
     display: inline-block;
     color: white;
     font-size: 25px;
@@ -202,11 +202,11 @@
     transform: translate3d(0px, 0px, 50px);
   }
   
-  .content-box .card-title:hover {
+  .content-box5 .card-title5:hover {
     transform: translate3d(0px, 0px, 60px);
   }
   
-  .content-box .card-content {
+  .content-box5 .card-content5 {
     margin-top: 10px;
     font-size: 12px;
     font-weight: 700;
@@ -215,11 +215,11 @@
     transform: translate3d(0px, 0px, 30px);
   }
   
-  .content-box .card-content:hover {
+  .content-box5 .card-content5:hover {
     transform: translate3d(0px, 0px, 60px);
   }
   
-  .content-box .see-more {
+  .content-box5 .see-more5 {
     cursor: pointer;
     margin-top: 1rem;
     display: inline-block;
@@ -234,11 +234,11 @@
     transform: translate3d(0px, 0px, 20px);
   }
   
-  .content-box .see-more:hover {
+  .content-box5 .see-more5:hover {
     transform: translate3d(0px, 0px, 60px);
   }
   
-  .date-box {
+  .date-box5 {
     position: absolute;
     top: 30px;
     right: 30px;
@@ -253,18 +253,18 @@
     border-radius: 20px;
   }
   
-  .date-box span {
+  .date-box5 span {
     display: block;
     text-align: center;
   }
   
-  .date-box .month {
+  .date-box5 .month5 {
     color: rgb(4, 193, 250);
     font-size: 9px;
     font-weight: 700;
   }
   
-  .date-box .date {
+  .date-box5 .date5 {
     font-size: 20px;
     font-weight: 900;
     color: rgb(4, 193, 250);
@@ -280,7 +280,7 @@
 
 
   /* From Uiverse.io by codebykay101 */ 
-.container {
+  .container {
     position: relative;
     display: flex;
     justify-content: center;
@@ -325,14 +325,14 @@
     font-size: 2.5em;
     fill: #fff;
   }
-  .date-box .month {
+  .date-box5 .month5 {
     
     font-weight: 700;
     height: 80px;
     width:90px;
   }  
 
-  .monthjune{
+  .monthjune5{
     
         color: rgb(4, 193, 250);
         font-size: 9px;
@@ -398,4 +398,12 @@
 
 .container .glass:hover svg {
   fill: #00bcd4; /* Added hover effect with a vibrant color */
+}
+
+.learnmorebutton{
+  width: 100px;
+  background-color: black;
+  color: white;
+  border-style: none;
+  margin-left: 300px;
 }

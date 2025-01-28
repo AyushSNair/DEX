@@ -24,7 +24,7 @@ function NavBar(){
                 <li>Contact</li>
                 </ul>
 
-                <button>Login</button>
+                <button>Logout</button>
             </nav>
         </div>
     )
